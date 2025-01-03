@@ -42,7 +42,7 @@ const bookingSchema = new mongoose.Schema({
 const Booking = mongoose.model('Booking', bookingSchema);
 
 // POST route to create a booking
-app.post('/create-booking', async (req, res) => {
+app.post('https://backend-table-booking-zeta.vercel.app/create-booking', async (req, res) => {
     const { firstName, lastName, email, phone, date, time, guests, seatingPreference, specialRequests } = req.body;
 
     // Validation
